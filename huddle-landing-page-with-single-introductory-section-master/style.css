@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{   
-    background: url("./images/bg-desktop.svg");
+    background: url("./images/bg-desktop.svg") no-repeat;
     background-color: hsl(257, 40%, 49%);
     font-family: 'Poppins', sans-serif;
 
@@ -96,3 +96,66 @@ i:hover{
   .attribution a {
     color: white;
 }
+@media(max-width:800px){
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        background: url("./images/bg-mobile.svg") no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: 100%;
+        padding: 0 4rem 0 4rem;
+    }
+    .mockup img{
+        margin-top: 34px;
+        width: 100%;
+        
+
+    }
+    .corpo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .conteudo{
+        margin-top: 5.5rem;
+    }
+    h1{
+        font-size: 42px;
+        line-height:70px;
+        font-weight: 700;
+    }
+    h3{
+        margin-top: 30px;
+        font-size: 27px;
+        font-weight: 400;
+        line-height:50px;
+    }
+    footer{
+        margin-top: 8rem;
+        
+    }
+    .social{
+        text-align: center;
+        font-size: 40px;
+    }
+    i{
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        padding: 15px;
+    }
+    .attribution{
+        margin-top: 19px;
+    }
+    button{
+        height: 60px;
+        width: 300px;
+        
+        margin-top: 40px;
+    
+        font-size: 25px;
+    }
+}   
