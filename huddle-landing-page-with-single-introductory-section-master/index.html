@@ -1,61 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+  <title>Frontend Mentor | Profile card component</title>
 
-  <script src="https://kit.fontawesome.com/8bf850953a.js" crossorigin="anonymous"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    .attribution a {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <img src="./images/logo.svg" href="google.com" alt="Logo">
-  </header>
   <main>
-    <div class="container">
-      <div class="corpo">
-        <div class="mockup">
-          <img src="./images/illustration-mockups.svg" alt="mockup">
-        </div>
-        <div class="conteudo">
-          <h1>Build The Community<br>Your Fans Will Love</h1>
-
-          <h3>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-            Create connections with your users as you engage in genuine discussion.
-          </h3>
-        
-          <div class="button">
-            <button>Register</button>
-          </div>
-        </div>
-        
+    <section class="cartao">
+      <div class="fotos capa">
+        <img class="base" src="./images/bg-pattern-card.svg" alt="foto capa card">
+        <img class="perfil" src="./images/image-victor.jpg" alt="foto_perfil">
       </div>
-
-    </div>
-
+      <div class="informacao-user">
+        <h4 class="name">Victor Crest<p class="age">26</p></h4>
+        <p class="country">London</p>
+      </div>
+      <section class="footer-card">
+        <table class="user-status">
+          <thead>
+            <tr>
+              <th>80k</th>
+              <th>803k</th>
+              <th>1.4k</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Followers</td>
+              <td>Likes</td>
+              <td>Phothos</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
   </main>
   <footer>
-    <div class="social">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"  ="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/RodrigoBrasil36">Rodrigo B</a>.
     </div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Rodrigo.B</a>.
-    </p>
   </footer>
-  
 </body>
 
 </html>
